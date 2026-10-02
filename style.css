@@ -1,0 +1,501 @@
+/* =========================
+   ページ全体
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111827;
+    color: #f9fafb;
+
+    margin: 0;
+    padding: 40px;
+
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+#loading {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
+    color: #5a5a5a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#loading p {
+    margin: 0;
+}
+
+
+/* 回転する円 */
+
+.spinner {
+    width: 200px;
+    height: 200px;
+
+    border: 3px solid #5a5a5a;
+    border-top: 8px dotted #60a5fa;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+
+    animation: rotateAnimation 5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* Loading文字 */
+
+.loading-title {
+    font-size: 30px;
+
+    margin-top: 10px !important;
+}
+
+.loading-name {
+    font-size: 48px;
+
+    margin-top: 10px !important;
+}
+
+.loading-message {
+    font-size: 18px;
+
+    margin-top: 5px !important;
+}
+
+
+/* プログレスバー */
+
+#progress-bar {
+    appearance: none;
+
+    width: 300px;
+    height: 10px;
+
+    border: none;
+
+    margin-top: 8px;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #e5e7eb;
+
+    border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #60a5fa;
+
+    border-radius: 10px;
+}
+
+#progress {
+    font-size: 24px;
+
+    margin-top: 8px !important;
+}
+
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
+header {
+    margin-bottom: 40px;
+}
+
+nav {
+    margin-top: 0;
+}
+
+nav a {
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+/* ハンバーガーボタン */
+
+.menu-button {
+    display: none;
+
+    background-color: transparent;
+    color: #60a5fa;
+
+    border: 1px solid #60a5fa;
+
+    border-radius: 8px;
+
+    padding: 8px 12px;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   共通 SECTION
+========================= */
+
+section {
+    margin: 40px 0;
+
+    padding: 24px;
+
+    background-color: #1f2937;
+
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 430px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tagline {
+    font-weight: bold;
+}
+
+.character {
+    width: 300px;
+    height: auto;
+}
+
+
+/* HEROボタン */
+
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    background-color: #60a5fa;
+    color: #111827;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #93c5fd;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CHARACTER
+========================= */
+
+.character-section {
+    margin-top: 80px;
+
+    padding: 32px;
+}
+
+
+/* キャラクター説明 */
+
+.character-info {
+    max-width: 750px;
+
+    margin-top: 30px;
+}
+
+.character-label {
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.character-info h3 {
+    font-size: 38px;
+
+    margin: 8px 0 20px;
+}
+
+.character-description {
+    max-width: 700px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PROFILE GRID
+========================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+
+/* 各プロフィールカード */
+
+.profile-item {
+    padding: 20px;
+
+    background-color: #111827;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.profile-item:hover {
+    transform: translateY(-3px);
+}
+
+
+/* プロフィール見出し */
+
+.profile-item h4 {
+    color: #60a5fa;
+
+    font-size: 18px;
+
+    margin: 0 0 10px;
+}
+
+
+/* プロフィール本文 */
+
+.profile-item p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+.box {
+  margin       : auto;
+  width        : 300px;
+  height       : 50px;
+  background   : #00ff00;
+}
+
+
+/* =========================
+   ABOUT / ACTIVITY
+========================= */
+
+.cards {
+    display: flex;
+
+    gap: 30px;
+}
+
+.cards section {
+    flex: 1;
+}
+
+
+/* =========================
+   スマホ
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px;
+    }
+
+
+    /* -------------------------
+       MENU
+    ------------------------- */
+
+    .menu-button {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+
+        margin-top: 15px;
+    }
+
+    .menu.open {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu a {
+        margin-right: 0;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .character {
+        width: 250px;
+
+        margin-top: 30px;
+    }
+
+
+    /* -------------------------
+       CHARACTER
+    ------------------------- */
+
+    .character-section {
+        padding: 24px;
+    }
+
+    .character-info {
+        margin-top: 20px;
+    }
+
+    .character-info h3 {
+        font-size: 30px;
+    }
+
+    .character-description {
+        line-height: 1.7;
+    }
+
+
+    /* PROFILE GRID */
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-top: 30px;
+    }
+
+
+    /* -------------------------
+       ABOUT / ACTIVITY
+    ------------------------- */
+
+    .cards {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    /* -------------------------
+       LOADING
+    ------------------------- */
+
+    .spinner {
+        width: 150px;
+        height: 150px;
+    }
+
+    .loading-title {
+        font-size: 24px;
+    }
+
+    .loading-name {
+        font-size: 36px;
+    }
+
+    .loading-message {
+        font-size: 16px;
+    }
+
+    #progress-bar {
+        width: 250px;
+    }
+
+}
