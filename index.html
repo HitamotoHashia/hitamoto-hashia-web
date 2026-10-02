@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ヒタモト＝ハシア</title>
+    <meta name="description"
+        content="永遠の大学生VTuber、ヒタモト＝ハシア。「一緒に学ぶ」をテーマに、知的好奇心の赴くまま様々な分野を学んでいます。">
+
+    <title>ヒタモト＝ハシア | 永遠の大学生VTuber</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,13 +46,24 @@
 
         <header>
 
-            <button class="menu-button">☰</button>
+            <div class="header-inner">
 
-            <nav class="menu">
-                <a href="#character">CHARACTER</a>
-                <a href="#about">ABOUT</a>
-                <a href="#activity">ACTIVITY</a>
-            </nav>
+                <a href="#" class="site-name">
+                    HITAMOTO = HASHIA
+                </a>
+
+                <button class="menu-button" aria-label="メニューを開く">
+                    ☰
+                </button>
+
+                <nav class="menu">
+                    <a href="#character">CHARACTER</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#activity">ACTIVITY</a>
+                    <a href="#studying">NOW STUDYING</a>
+                </nav>
+
+            </div>
 
         </header>
 
@@ -65,30 +79,73 @@
 
                 <div class="hero-text">
 
+                    <p class="hero-small">
+                        ETERNAL UNIVERSITY STUDENT VTUBER
+                    </p>
+
                     <p class="tagline">
                         永遠の大学生VTuber
                     </p>
 
                     <h1>
-                        ヒタモト＝ハシア
+                        ヒタモト＝<br class="hero-break">
+                        ハシア
                     </h1>
 
-                    <p>
-                        「一緒に学ぶ」をテーマに、知的好奇心を楽しむVTuber。
+                    <p class="hero-description">
+                        知らないことは、面白い。<br>
+                        「一緒に学ぶ」をテーマに、<br>
+                        知的好奇心を楽しむVTuber。
                     </p>
 
-                    <a href="#character" class="button">
-                        もっと知る
-                    </a>
+                    <div class="hero-buttons">
+
+                        <a href="#character" class="button">
+                            もっと知る
+                        </a>
+
+                        <a href="#activity" class="button button-sub">
+                            活動を見る
+                        </a>
+
+                    </div>
 
                 </div>
 
 
-                <img
-                    src="images/hitamoto-hashia.png"
-                    alt="ヒタモト＝ハシア"
-                    class="character"
-                >
+                <div class="hero-character">
+
+                    <div class="character-glow"></div>
+
+                    <img
+                        src="images/hitamoto-hashia.png"
+                        alt="ヒタモト＝ハシア"
+                        class="character"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 INTRO
+            ========================== -->
+
+            <section class="intro-section">
+
+                <p class="intro-en">
+                    CURIOSITY NEVER GRADUATES.
+                </p>
+
+                <p class="intro-main">
+                    好奇心に、卒業はない。
+                </p>
+
+                <p class="intro-description">
+                    世界には、まだ知らないことが山ほどある。<br>
+                    だから今日も、本を開いて、考えて、寄り道する。
+                </p>
 
             </section>
 
@@ -99,10 +156,17 @@
 
             <section id="character" class="character-section">
 
-                <h2>CHARACTER</h2>
+                <div class="section-heading">
 
+                    <p class="section-number">01</p>
 
-                <!-- キャラクター紹介 -->
+                    <div>
+                        <h2>CHARACTER</h2>
+                        <p>ヒタモト＝ハシアについて</p>
+                    </div>
+
+                </div>
+
 
                 <div class="character-info">
 
@@ -115,23 +179,27 @@
                     </h3>
 
                     <p class="character-description">
-                        「一緒に学ぶ」をテーマに、知的好奇心の赴くまま
-                        様々な分野を学ぶVTuber。
+                        「一緒に学ぶ」をテーマに、
+                        知的好奇心の赴くまま様々な分野を学ぶVTuber。
                         <br><br>
                         知ること、考えること、そして「なぜ？」を楽しむこと。
-                        卒業するためではなく、知らないことを面白がり続ける
+                        <br>
+                        卒業するためではなく、
+                        知らないことを面白がり続ける
                         “永遠の大学生”として活動しています。
                     </p>
 
                 </div>
 
 
-                <!-- プロフィールカード -->
+                <!-- PROFILE -->
 
                 <div class="profile-grid">
 
 
                     <div class="profile-item">
+
+                        <span class="profile-icon">📚</span>
 
                         <h4>好きなこと</h4>
 
@@ -145,6 +213,8 @@
 
                     <div class="profile-item">
 
+                        <span class="profile-icon">🔬</span>
+
                         <h4>興味のある分野</h4>
 
                         <p>
@@ -155,6 +225,8 @@
 
 
                     <div class="profile-item">
+
+                        <span class="profile-icon">🎓</span>
 
                         <h4>活動スタイル</h4>
 
@@ -168,130 +240,397 @@
 
                     <div class="profile-item">
 
+                        <span class="profile-icon">⚙️</span>
+
                         <h4>資格</h4>
 
                         <p>
-                            博士（工学）<br>
+                            博士（工学）
                         </p>
 
                     </div>
 
 
                     <div class="profile-item">
+
+                        <span class="profile-icon">📖</span>
 
                         <h4>ファンマーク</h4>
 
-                        <p>
+                        <p class="large-text">
                             📖🎓
                         </p>
+
                     </div>
 
 
                     <div class="profile-item">
 
-                        <h4>カラーコード</h4>
+                        <span class="profile-icon">🎨</span>
 
-                        <p>
-                            #00ff00
-                            <div class="box" id="makeImg">
-                            </div>
-                        </p>
+                        <h4>カラー</h4>
+
+                        <div class="color-info">
+
+                            <div class="color-box"></div>
+
+                            <span>#00ff00</span>
+
+                        </div>
+
                     </div>
 
 
                     <div class="profile-item">
+
+                        <span class="profile-icon">🌙</span>
 
                         <h4>配信感想タグ</h4>
 
                         <p>
                             #ヒタモト夜の研究室
                         </p>
+
                     </div>
 
 
-                   <div class="profile-item">
+                    <div class="profile-item">
+
+                        <span class="profile-icon">🖌️</span>
 
                         <h4>ファンアートタグ</h4>
 
                         <p>
                             #ハシアート
                         </p>
+
                     </div>
 
 
                     <div class="profile-item">
+
+                        <span class="profile-icon">🔑</span>
 
                         <h4>KEYWORD</h4>
 
                         <p>
                             読書 / 学問 / 知的好奇心
                         </p>
+
                     </div>
 
+
                     <div class="profile-item">
+
+                        <span class="profile-icon">✏️</span>
 
                         <h4>教授（ママ）</h4>
 
                         <p>
                             只野（@Tadano_tubu）
                         </p>
+
                     </div>
+
                 </div>
 
             </section>
 
 
             <!-- =========================
-                 ABOUT / ACTIVITY
+                 ABOUT
             ========================== -->
 
-            <div class="cards">
+            <section id="about" class="about-section">
+
+                <div class="section-heading">
+
+                    <p class="section-number">02</p>
+
+                    <div>
+                        <h2>ABOUT</h2>
+                        <p>「一緒に学ぶ」ということ</p>
+                    </div>
+
+                </div>
 
 
-                <!-- ABOUT -->
+                <div class="about-content">
 
-                <section id="about">
-
-                    <h2>ABOUT</h2>
-
-                    <p>
-                        「一緒に学ぶ」をテーマに活動しています。
+                    <p class="about-lead">
+                        「教える」のではなく、<br>
+                        <strong>一緒に「なんだこれ？」を楽しみたい。</strong>
                     </p>
 
                     <p>
-                        知らないことを知る楽しさや、<br>
-                        「これって何だろう？」という好奇心を、<br>
-                        一緒に楽しめる場所を目指しています。
+                        数学、物理学、医学、哲学、そして本の中にある
+                        まだ知らない世界。
                     </p>
 
-                </section>
+                    <p>
+                        難しいことも、分からないことも、
+                        「分からないから面白い」と思える場所を目指しています。
+                    </p>
+
+                    <p>
+                        先生と生徒ではなく、
+                        同じ机で本を広げるような関係で。
+                    </p>
+
+                </div>
+
+            </section>
 
 
-                <!-- ACTIVITY -->
+            <!-- =========================
+                 ACTIVITY
+            ========================== -->
 
-                <section id="activity">
+            <section id="activity" class="activity-section">
 
-                    <h2>ACTIVITY</h2>
+                <div class="section-heading">
 
-                    <ul>
-                        <li>VTuber活動</li>
-                        <li>読書</li>
-                        <li>数学・物理学</li>
-                        <li>医学</li>
-                        <li>哲学</li>
-                    </ul>
+                    <p class="section-number">03</p>
 
-                </section>
+                    <div>
+                        <h2>ACTIVITY</h2>
+                        <p>夜の研究室では、こんなことを。</p>
+                    </div>
+
+                </div>
 
 
-            </div>
+                <div class="activity-grid">
+
+
+                    <article class="activity-card">
+
+                        <p class="activity-number">01</p>
+
+                        <div class="activity-icon">
+                            📐
+                        </div>
+
+                        <h3>数学・物理</h3>
+
+                        <p>
+                            宇宙から数式まで。
+                            「どうしてそうなるんだろう？」を
+                            一緒に追いかけます。
+                        </p>
+
+                        <span class="activity-en">
+                            MATHEMATICS / PHYSICS
+                        </span>
+
+                    </article>
+
+
+                    <article class="activity-card">
+
+                        <p class="activity-number">02</p>
+
+                        <div class="activity-icon">
+                            🧬
+                        </div>
+
+                        <h3>医学・生命科学</h3>
+
+                        <p>
+                            身体の仕組みや生命について、
+                            専門書も眺めながら
+                            「なるほど」を探します。
+                        </p>
+
+                        <span class="activity-en">
+                            MEDICINE / LIFE SCIENCE
+                        </span>
+
+                    </article>
+
+
+                    <article class="activity-card">
+
+                        <p class="activity-number">03</p>
+
+                        <div class="activity-icon">
+                            📚
+                        </div>
+
+                        <h3>哲学・読書</h3>
+
+                        <p>
+                            難しい本から面白い本まで。
+                            分からないところも含めて、
+                            読むことそのものを楽しみます。
+                        </p>
+
+                        <span class="activity-en">
+                            PHILOSOPHY / BOOKS
+                        </span>
+
+                    </article>
+
+
+                    <article class="activity-card">
+
+                        <p class="activity-number">04</p>
+
+                        <div class="activity-icon">
+                            🎙️
+                        </div>
+
+                        <h3>配信・雑談</h3>
+
+                        <p>
+                            完成した知識を披露するのではなく、
+                            気になったことを持ち寄って、
+                            一緒に考える時間。
+                        </p>
+
+                        <span class="activity-en">
+                            STREAM / TALK
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 NOW STUDYING
+            ========================== -->
+
+            <section id="studying" class="studying-section">
+
+                <div class="section-heading">
+
+                    <p class="section-number">04</p>
+
+                    <div>
+                        <h2>NOW STUDYING</h2>
+                        <p>最近、気になっていること。</p>
+                    </div>
+
+                </div>
+
+
+                <div class="studying-content">
+
+                    <div class="studying-main">
+
+                        <p class="studying-label">
+                            CURRENT INTEREST
+                        </p>
+
+                        <h3>
+                            今日も、知らないことを<br>
+                            ひとつ増やす。
+                        </h3>
+
+                        <p>
+                            数学、物理学、医学、哲学。
+                            <br>
+                            気になったテーマを本で調べたり、
+                            考えたり、寄り道したり。
+                        </p>
+
+                        <p>
+                            学問は攻略するものではなく、
+                            面白がるもの。
+                        </p>
+
+                    </div>
+
+
+                    <div class="studying-list">
+
+                        <div class="studying-item">
+                            <span>01</span>
+                            <p>MATHEMATICS</p>
+                        </div>
+
+                        <div class="studying-item">
+                            <span>02</span>
+                            <p>PHYSICS</p>
+                        </div>
+
+                        <div class="studying-item">
+                            <span>03</span>
+                            <p>MEDICINE</p>
+                        </div>
+
+                        <div class="studying-item">
+                            <span>04</span>
+                            <p>PHILOSOPHY</p>
+                        </div>
+
+                        <div class="studying-item">
+                            <span>05</span>
+                            <p>AND MORE...</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 FINAL MESSAGE
+            ========================== -->
+
+            <section class="final-section">
+
+                <p class="final-small">
+                    HITAMOTO = HASHIA
+                </p>
+
+                <h2>
+                    一緒に、<br>
+                    知らないことを面白がろう。
+                </h2>
+
+                <p>
+                    好奇心に、卒業はない。
+                </p>
+
+                <a href="#" class="button final-button">
+                    PAGE TOP ↑
+                </a>
+
+            </section>
+
 
         </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <p class="footer-name">
+                HITAMOTO = HASHIA
+            </p>
+
+            <p>
+                永遠の大学生VTuber
+            </p>
+
+        </footer>
+
 
     </div>
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
