@@ -1,20 +1,33 @@
 "use strict";
 
-// 画面の準備ができたらローディングを短くフェードアウト。
-// 数字の進捗表示は実際の読み込み率ではないため使用しない。
+// =========================
+// LOADING
+// =========================
 const loading = document.querySelector("#loading");
-let loadingClosed = false;
+const minimumLoadingTime = 2000; // 最低表示時間：2秒
+const fadeDuration = 500;        // フェードアウト：0.5秒
+const startTime = performance.now();
 function hideLoading() {
-  if (loadingClosed || !loading) return;
-  loadingClosed = true;
-  loading.classList.add("is-hidden");
-  window.setTimeout(() => { loading.remove(); }, 400);
+    const elapsed = performance.now() - startTime;
+    const remaining = Math.max(
+        0,
+        minimumLoadingTime - elapsed
+    );
+    setTimeout(function () {
+        loading.classList.add("is-hidden");
+        setTimeout(function () {
+            loading.remove();
+        }, fadeDuration);
+    }, remaining);
 }
 if (document.readyState === "complete") {
-  hideLoading();
+    hideLoading();
 } else {
-  window.addEventListener("load", hideLoading, { once:true });
+    window.addEventListener("load", hideLoading, {
+        once: true
+    });
 }
+
 // 画像の読み込みが長引いても、操作を不必要に妨げない。
 window.setTimeout(hideLoading, 1800);
 
